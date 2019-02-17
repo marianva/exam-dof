@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: php-host
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels: 
       app: php-host
@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: php-host
-        image: marianva/php-host:%IMAGE-PLACEHOLDER%
+        image: marianv/php-host:%IMAGE-PLACEHOLDER%
         ports:
         - containerPort: 9000
 ---

@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: nginx-host
-        image: marianva/nginx-host:%IMAGE-PLACEHOLDER%
+        image: marianv/nginx-host:%IMAGE-PLACEHOLDER%
         ports:
         - containerPort: 80 
 ---

@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: redis-host
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels: 
       app: redis-host
@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: redis-host
-        image: marianva/redis-host:%IMAGE-PLACEHOLDER%
+        image: marianv/redis-host:%IMAGE-PLACEHOLDER%
         ports:
         - containerPort: 6379
 ---
